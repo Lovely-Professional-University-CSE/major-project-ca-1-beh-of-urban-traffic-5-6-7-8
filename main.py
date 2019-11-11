@@ -162,7 +162,7 @@ Civilengineer= ctrl.Consequent(np.arange(0,1.1,0.1),'Civilengineer')
 Insuranceagent= ctrl.Consequent(np.arange(0,1.1,0.1),'Insuranceagent')
 Realestate= ctrl.Consequent(np.arange(0,1.1,0.1),'Realestate')
 Telemarketer= ctrl.Consequent(np.arange(0,1.1,0.1),'Telemarketer')
-work_around = ctrl.Consequent(np.arange(0,1.1,0.1),'work_around')
+#work_around = ctrl.Consequent(np.arange(0,1.1,0.1),'work_around')
 
 Engineering.automf(names=['Not_good','Good','Excellent'])
 Medicine.automf(names=['Not_good','Good','Excellent'])
@@ -188,7 +188,7 @@ Civilengineer.automf(names=['Not_good','Good','Excellent'])
 Insuranceagent.automf(names=['Not_good','Good','Excellent'])
 Realestate.automf(names=['Not_good','Good','Excellent'])
 Telemarketer.automf(names=['Not_good','Good','Excellent'])
-work_around.automf(names=['DUD'])
+#work_around.automf(names=['DUD'])
 
 Engineering.view()
 Medicine.view()
@@ -327,7 +327,7 @@ rule97 = ctrl.Rule(Art['Average'] & Language['Good'] & History['Average'], Chief
 rule98 = ctrl.Rule(Art['Average'] & Language['Average'] & History['Excellent'], Chief['Not_good'])
 rule99 = ctrl.Rule(Art['Average'] & Language['Average'] & History['Good'], Chief['Not_good'])
 rule78 = ctrl.Rule(Art['Average'] & Language['Average'] & History['Average'], Chief['Not_good'])
-
+'''
 rule100 = ctrl.Rule(Physics['Very_Poor'],work_around['DUD'])
 rule101 = ctrl.Rule(Maths['Very_Poor'],work_around['DUD'])
 rule102 = ctrl.Rule(Chemistry['Very_Poor'],work_around['DUD'])
@@ -359,7 +359,7 @@ rule126 = ctrl.Rule(Economy['Poor'],work_around['DUD'])
 rule127 = ctrl.Rule(Literature['Poor'],work_around['DUD'])
 rule128 = ctrl.Rule(Language['Poor'],work_around['DUD'])
 rule129 = ctrl.Rule(Art['Poor'],work_around['DUD'])
-
+'''
 
 rule130 = ctrl.Rule(Language['Excellent'] & (Chemistry['Excellent'] | Physics['Excellent'] | Maths['Excellent'] |  Biology['Excellent'] |  Business['Excellent'] |  Accountancy['Excellent'] |  PE['Excellent'] |  CS['Excellent'] |  History['Excellent'] |  Geography['Excellent'] |  Politics['Excellent'] |  Economy['Excellent'] |  Literature['Excellent'] |  Art['Excellent']), Teacher['Excellent'])
 rule131 = ctrl.Rule(Language['Excellent'] & (Chemistry['Good'] | Physics['Good'] | Maths['Good'] |  Biology['Good'] |  Business['Good'] |  Accountancy['Good'] |  PE['Good'] |  CS['Good'] |  History['Good'] |  Geography['Good'] |  Politics['Good'] |  Economy['Good'] |  Literature['Good'] |  Art['Good']), Teacher['Excellent'])
