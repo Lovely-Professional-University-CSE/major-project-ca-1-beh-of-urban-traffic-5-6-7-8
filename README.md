@@ -37,3 +37,36 @@ Gaussian fuzzifier
 Trapezoidal or triangular fuzzifier
 
 ##### These are all the concepts that are used in this project so before moving to code make sure you have gone to them atleast once.
+
+
+
+## Step by Step approach for creating the Model
+
+##### Step 1
+Importing all necessary modules
+ 
+##### Step 2
+We decide our input subject and make function.
+(Antecedent Function)
+
+##### Step 3
+Divede our input antecedent in different different categories
+on the basis of defined range that is if it is between 70 to 100 then it is excellent
+
+##### Step 4
+Add proffesion and make function. 
+(Consequent Function)
+
+##### Step 5
+We divide our consequent variable into different categories using automf function.
+
+##### Step 6
+Made rules and using Control system function merge all the rules.
+
+##### Step 7
+Using ControlSystemSimulation Function we simulate the rules.
+
+##### Step 8
+Making of GUI using django.
+
+
